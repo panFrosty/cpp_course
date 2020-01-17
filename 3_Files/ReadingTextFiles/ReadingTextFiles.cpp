@@ -1,5 +1,5 @@
 /**
- * @title: Writing Text Files
+ * @title: Reading Text Files
  * @author: pgorny
  * 
  **/
