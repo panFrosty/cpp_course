@@ -1,31 +1,32 @@
 /**
- * @title: Standard Exceptions
+ * @title: Writing Text Files
  * @author: pgorny
  * 
  **/
 
 #include <iostream>
+#include <fstream>
 
 using namespace std;
 
-class CanGoWrong{
-    public:
-        CanGoWrong(){
-            char *pMemory = new char[999999999999999];
-            delete[] pMemory;
-        }
-};
-
 int main()
 {
-    try{
-        CanGoWrong wrong;
-    }
-    catch(bad_alloc &e){
-        cout << "Cought exception: " << e.what() << endl;
-    }
+    fstream outputFile;
+    string outputFilename = "test.txt";
+    outputFile.open(outputFilename,ios::out);
     
-    cout << "Still running"<<endl;
+    if (outputFile.is_open())
+    {
+        cerr << "Opened file: " << outputFilename << endl;
+        outputFile << "Hello there!";
+        outputFile << "123!";
+        outputFile << 123;
+        outputFile.close();
+    }
+    else
+    {
+        cerr << "Could not create file: " << outputFilename << endl;
+    }
 
     return 0;
 }
