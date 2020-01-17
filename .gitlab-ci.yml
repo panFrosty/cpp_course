@@ -1,0 +1,20 @@
+image: alpine:latest
+
+stages:
+  - build
+
+Build:
+  stage: build
+  before_script:
+    - apk add build-base cmake ninja
+  script:
+    - echo 'Starting build job.'
+    - mkdir build
+    - cd build
+    - cmake .. -G"Ninja"
+    - ninja > make.log
+  artifacts:
+    paths:
+    - build/*/*/*.exe
+    - build/make.log
+

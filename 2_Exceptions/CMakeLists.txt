@@ -1,0 +1,6 @@
+project(2_Exceptions)
+
+add_subdirectory(BasicExceptions)
+add_subdirectory(StandardExceptions)
+add_subdirectory(CustomExceptions)
+add_subdirectory(ExceptionCatchingOrder)
