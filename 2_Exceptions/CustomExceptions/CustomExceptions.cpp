@@ -13,7 +13,7 @@ class MyException : public exception
 public:
     virtual const char *what() const throw()
     {
-        return "Something bad happens";
+        return "Something bad happens!";
     }
 };
 
