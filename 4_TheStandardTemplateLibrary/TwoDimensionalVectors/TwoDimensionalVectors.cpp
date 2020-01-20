@@ -1,5 +1,5 @@
 /**
- * @title: Vectors
+ * @title: Two Dimensional Vectors
  * @author: pgorny
  * 
  **/
