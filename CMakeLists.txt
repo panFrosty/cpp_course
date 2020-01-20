@@ -4,3 +4,4 @@ set (CMAKE_CXX_STANDARD 11)
 
 add_subdirectory(2_Exceptions)
 add_subdirectory(3_Files)
+add_subdirectory(4_TheStandardTemplateLibrary)
