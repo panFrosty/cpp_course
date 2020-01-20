@@ -12,9 +12,5 @@ Build:
     - mkdir build
     - cd build
     - cmake .. -G"Ninja"
-    - ninja > make.log
-  artifacts:
-    paths:
-    - build/*/*/*.exe
-    - build/make.log
+    - ninja
 
