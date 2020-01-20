@@ -12,6 +12,7 @@ Population Poland: 33000000
 
 #include <iostream>
 #include <fstream>
+#include <string>
 
 using namespace std;
 

@@ -11,6 +11,7 @@ Hello there!123!123
 
 #include <iostream>
 #include <fstream>
+#include <string>
 
 using namespace std;
 
