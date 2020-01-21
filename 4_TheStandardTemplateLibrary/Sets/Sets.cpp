@@ -16,6 +16,11 @@ private:
     string name;
 
 public:
+    Test():id(0),name("")
+    {
+
+    }
+
     Test(int id, string name) : id(id), name(name)
     {
     }
@@ -25,9 +30,9 @@ public:
         cout << id << ": " << name << endl;
     }
 
-    bool operator<(const Test& other) const
+    bool operator<(const Test &other) const
     {
-        if(name==other.name)
+        if (name == other.name)
         {
             return id < other.id;
         }
@@ -61,16 +66,17 @@ int main()
     }
     if (numbers.count(33))
     {
-        cout << "Number Found!"<<endl;
+        cout << "Number Found!" << endl;
     }
 
     set<Test> tests;
 
-    tests.insert(Test(32,"Frosty"));
-    tests.insert(Test(26,"Mia"));
-    tests.insert(Test(42,"Stefan"));
+    tests.insert(Test(32, "Frosty"));
+    tests.insert(Test(26, "Mia"));
+    tests.insert(Test(42, "Stefan"));
+    tests.insert(Test(422, "Stefan"));
 
-    for(set<Test>::iterator it = tests.begin(); it!=tests.end();it++)
+    for (set<Test>::iterator it = tests.begin(); it != tests.end(); it++)
     {
         it->print();
     }
