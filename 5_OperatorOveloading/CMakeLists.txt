@@ -2,3 +2,4 @@ project(5_OperatorOveloading)
 
 add_subdirectory(OverloadingTheAssignmentOperator)
 add_subdirectory(Printing_OverloadingLeftBitShift)
+add_subdirectory(ComplexNumberClass)
