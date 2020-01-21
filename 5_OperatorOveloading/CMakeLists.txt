@@ -1,0 +1,3 @@
+project(5_OperatorOveloading)
+
+add_subdirectory(OverloadingTheAssignmentOperator)

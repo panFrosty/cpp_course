@@ -1,0 +1,5 @@
+project(OverloadingTheAssignmentOperator)
+
+# add the executable
+add_executable(OverloadingTheAssignmentOperator OverloadingTheAssignmentOperator.cpp)
+target_compile_options(OverloadingTheAssignmentOperator PRIVATE -Wall -Wextra)
