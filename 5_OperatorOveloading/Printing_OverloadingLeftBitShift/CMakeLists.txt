@@ -1,0 +1,5 @@
+project(Printing_OverloadingLeftBitShift)
+
+# add the executable
+add_executable(Printing_OverloadingLeftBitShift Printing_OverloadingLeftBitShift.cpp)
+target_compile_options(Printing_OverloadingLeftBitShift PRIVATE -Wall -Wextra)
