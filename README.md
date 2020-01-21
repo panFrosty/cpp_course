@@ -1,11 +1,14 @@
 # About
 This repository contains source code made during Learn Advanced C++ Programming.
 
-Source code is integrated into cmake build system and compiled agains MinGWx64 on Windows 10.
+Compilation tested on Windows(MinGW), MacOs(Clang), Linux(GCC)
 
-Compilation should work on any platform supporting GCC7.
+## Requirements
+* Any build system supporting C+11
+* CMake > 3.0
+* optional: Ninja for faster building
 
-## Installation
+## Compilation
 From build directory:
 * `cmake .. -GNinja`
 * `ninja`
