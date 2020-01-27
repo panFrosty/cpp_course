@@ -1,0 +1,4 @@
+project(6_TemplateClassesAndFunctions)
+
+add_subdirectory(Templates-AnImportantNote)
+add_subdirectory(TemplateClasses)
