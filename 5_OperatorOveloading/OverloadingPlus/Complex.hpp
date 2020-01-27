@@ -30,6 +30,8 @@ private:
 
 std::ostream& operator<<(std::ostream& out, const Complex &complex);
 Complex operator+(const Complex& c1, const Complex& c2);
+Complex operator+(const Complex& c1, double d);
+Complex operator+(double d, const Complex& c1);
 
 
 
