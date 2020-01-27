@@ -1,0 +1,5 @@
+project(OverloadingTheDereferenceOperator)
+
+# add the executable
+add_executable(OverloadingTheDereferenceOperator OverloadingTheDereferenceOperator.cpp Complex.cpp)
+target_compile_options(OverloadingTheDereferenceOperator PRIVATE -Wall -Wextra)
