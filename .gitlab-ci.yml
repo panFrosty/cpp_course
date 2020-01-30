@@ -2,9 +2,15 @@ image: alpine:latest
 
 stages:
   - build
+  - test
 
 Build:
   stage: build
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - build/bin
+    policy: push
   before_script:
     - apk add build-base cmake ninja
   script:
@@ -13,4 +19,20 @@ Build:
     - cd build
     - cmake .. -G"Ninja"
     - ninja
+
+
+Test:
+  stage: test
+  cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - build/bin
+    policy: pull
+  before_script:
+    - apk add build-base
+  script:
+    - cd build/bin
+    - touch test.txt
+    - touch stats.txt
+    - run-parts . 
 
